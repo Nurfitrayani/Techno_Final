@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../fw/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="../img/logo.png" width="80" class="d-inline-block align-top" alt="" loading="lazy">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Keranjang <i class="fa fa-cart-shopping"></i></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Pembelian <i class="fa fa-bag-shopping"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Pengiriman <i class="fa fa-truck-fast"></i></a>
+                <li class="nav-item">
+                  <a class="btn btn-outline-danger" href="index.html">Logout <i class="fa fa-sign-out-alt"></i></a>
+                </li>
+              </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../img/book.png" class="d-block w-100" height="500px" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../img/about_us.png" class="d-block w-100" height="500px" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../img/about_us_1.png" class="d-block w-100" height="500px" alt="...">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    <main class="mt-5 mb-5">
+        <div class="container">
+            <h2>Detail Produk Lumpia</h2>
+            <hr>
+            <div class="row">
+                <div class="col-lg-4 mb-3">
+                    <div class="card" >
+                        <img src="../img/menu/lumpia.png" class="img-fluid" alt="...">
+                    </div>
+                </div>
+                <div class="col-lg-8 mb-3">
+                    <div class="card" >
+                      <div class="card-body">
+                      <table>
+                        <tr>
+                          <th>Nama</th>
+                          <td>:</td>
+                          <td>Spotato Lumpia</td>
+                        </tr>
+                        <tr>
+                          <th>Deskripsi</th>
+                          <td>:</td>
+                          <td>Lumpia dengan isi ubi ungu</td>
+                        </tr>
+                        <tr>
+                          <th>Kategori</th>
+                          <td>:</td>
+                          <td>Lumpia</td>
+                        </tr>
+                        <tr>
+                          <th>Varian</th>
+                          <td>:</td>
+                          <td>Original, Matcha, Oreo, Coklat, Strawberry, Vanilla</td>
+                        </tr>
+                        <tr>
+                          <th>Harga</th>
+                          <td>:</td>
+                          <td> 18.000 </td>
+                        </tr>
+                      </table>
+                      <br>
+                      <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-shopping-cart" aria-hidden="true"></i><i class="fa fa-plus" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Form Input Pemesanan</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <form action="" method="post">
+                          <div class="form-group">
+                            <label for="">Nama Customer</label>
+                            <input type="text" class="form-control" value="Nama Pelanggan" readonly>
+                          </div>
+                          <div class="form-group">
+                            <label for="">Kategori</label>
+                            <input type="text" class="form-control" value="Nama Produk" readonly>
+                          </div>
+                          <div class="form-group">
+                            <label for="">Varian Rasa</label>
+                            <input type="text" class="form-control" value="Varian" readonly>
+                          </div>
+                          <div class="form-group">
+                            <label for="">Jumlah Beli</label>
+                            <input type="number" class="form-control" required>
+                          </div>
+                          <div class="form-group">
+                            <label for="">Harga Barang</label>
+                            <input type="text" class="form-control" value="10000" readonly>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary"><i class="fa fa-shopping-cart" aria-hidden="true"></i><i class="fa fa-plus"></i> </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="mt-5 mb-4 border-top">
+        <div class="container-fluid">
+            <div class="row border-top justify-content-center align-items-center pt-4">
+                <div class="col-auto text-gray-500 font-weight-light">
+                    &copy;Copyright 2023 Spotato | create by NF&trade;
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../jquery/jquery-3.6.3.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+</html>
